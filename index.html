@@ -11,14 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <!-- nav bar section  -->
     <header class="header">
       <nav class="nav-bar">
         <div class="nav-bar-components">
-          <img src="./assets/icon/logo.svg" alt="logo" />
+          <img src="./assets/icon/logo.svg" class="logo" />
         </div>
         <div class="nav-bar-components">
           <ul class="nav-bar-options">
@@ -31,18 +31,13 @@
         <div class="nav-bar-components">
           <button class="btn" id="downloadBtn">Download</button>
         </div>
-        <div class="nav-bar-components mobile-menu">
-          <div class="hamburger-menu">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
+        <div class="nav-bar-components">
+          <button class="btn" id="themeToggleBtn">Toggle Theme</button>
         </div>
       </nav>
     </header>
 
     <!-- hero section -->
-
     <main>
       <div class="hero">
         <!-- hero section left division -->
@@ -65,8 +60,8 @@
               Get Started
               <span><img src="./assets/icon/arrow.svg" alt="arrow" /></span>
             </button>
-            <button class="watch-vvideo-btn">
-              <span
+            <button class="watch-vvideo-btn" style="color: grey">
+              <span style="color: grey"
                 ><img src="./assets/icon/video.svg" alt="watch-video" /></span
               >Watch Video
             </button>
@@ -88,20 +83,21 @@
     </main>
 
     <!-- features section  -->
-
     <section id="features">
       <!-- feature left division  -->
       <div class="features-left-division">
-        <img src="./assets/images/features.svg" alt="iphone-image" />
+        <img
+          src="./assets/images/features.svg"
+          alt="iphone-image"
+          style="width: 50vw"
+        />
       </div>
-
       <!-- feature right division  -->
       <div class="features-right-division">
         <div class="feature-right-content">
           <p>Features</p>
           <h2>Uifry Premium</h2>
         </div>
-
         <div class="feature-right-content">
           <div class="feature-description">
             <img
@@ -148,13 +144,11 @@
     </section>
 
     <!-- advantages section  -->
-
     <section id="advantages">
       <div class="advantages-heading">
         <p>Advantages</p>
         <h2>Why Choose Uifry?</h2>
       </div>
-
       <div class="advantages-division">
         <div class="advantages-content">
           <div class="advantages-phone-images-section">
@@ -180,7 +174,6 @@
             </div>
           </div>
         </div>
-
         <div class="advantages-content">
           <div class="advantages-phone-images-section">
             <img
@@ -209,7 +202,6 @@
     </section>
 
     <!-- testimonial section -->
-
     <section id="testimonial">
       <div class="testimonial-heading">
         <p>Testimonial</p>
@@ -217,10 +209,9 @@
           What Our Users <br />
           Say About Us?
         </h2>
-
         <div class="testimonial-division">
           <div class="testimonial-content-left">
-            <img src="./assets/images/testimonal.svg" alt="testimonial" />
+            <img src="./assets/images/testimonal.svg" alt="testimonial" style="width: 50vw;" />
           </div>
           <div class="testimonial-content-rright">
             <h3>the best financial accounting app ever!</h3>
@@ -240,7 +231,8 @@
         </div>
       </div>
     </section>
-    <!-- QandAsection -->
+
+    <!-- FAQ Section -->
     <section id="FAQ">
       <div class="FAQ-heading">
         <p>FAQ</p>
@@ -300,9 +292,70 @@
         </div>
       </div>
     </section>
+
     <!-- ready to go section  -->
     <section id="ready-to-go">
       <img src="./assets/images/Frame.svg" alt="readyToGo" />
     </section>
+
+    <!-- footer section  -->
+    <div class="footer">
+      <footer>
+        <div class="footer-column">
+          <img src="./assets/icon/logo.svg" class="Logo" style="width: 100px" />
+          <div>
+            <img
+              src="./assets/icon/email.svg"
+              alt="Message Icon"
+              style="width: 20px"
+            />
+            help@frybix.com
+          </div>
+          <div>
+            <img
+              src="./assets/icon/call.svg"
+              alt="Phoneicon"
+              style="width: 20px"
+            />
+            +123456789
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Links</h3>
+          <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Booking</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Legal</h3>
+          <ul>
+            <li>Terms of Use</li>
+            <li>Privacy Policy</li>
+            <li>Cookie Policy</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Product</h3>
+          <ul>
+            <li>Take Tour</li>
+            <li>Live Chat</li>
+            <li>Review</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Newsletter</h3>
+          <p>Stay Up to Date</p>
+          <div class="subscribe-container">
+            <input type="email" placeholder="Your Email" />
+            <button class="btn">Subscribe</button>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <hr class="footer-divider" />
+    <p class="copyright">Copyright 2022 uifry.com all rights reserved</p>
   </body>
 </html>
